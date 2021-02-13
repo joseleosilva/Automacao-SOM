@@ -5,8 +5,9 @@ Library         SeleniumLibrary
 
 **Test Case**
 
-Levantamento Omnicanal - Motivos de Rutura - Stock 0 - Matosinhos
-    Open Browser                    http://som-pp.worten.net                        ff
+Levantamento Omnicanal - Motivos de Rutura - Stock 0 - Sintra
+    Open Browser                    http://som-pp.worten.net                        chrome
+    Set Window Size	                1920	 1080
     Sleep                           1
     Input Text                      id:username                                     TST_SOM_04      
     Input Text                      id:password                                     Pass.123
@@ -26,11 +27,15 @@ Levantamento Omnicanal - Motivos de Rutura - Stock 0 - Matosinhos
     
 
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
@@ -39,8 +44,9 @@ Levantamento Omnicanal - Motivos de Rutura - Stock 0 - Matosinhos
 
 
 
-Levantamento Omnicanal - Erro de Stock - Matosinhos
-    Open Browser                    http://som-pp.worten.net                        ff
+Levantamento Omnicanal - Erro de Stock - Sintra
+    Open Browser                    http://som-pp.worten.net                        chrome
+    Set Window Size	                1920	 1080
     Sleep                           1
     Input Text                      id:username                                     TST_SOM_04      
     Input Text                      id:password                                     Pass.123
@@ -60,11 +66,15 @@ Levantamento Omnicanal - Erro de Stock - Matosinhos
     
 
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
@@ -72,8 +82,9 @@ Levantamento Omnicanal - Erro de Stock - Matosinhos
 
 
 
-Levantamento Omnicanal - Motivos de Rutura - Danificado - Matosinhos
-    Open Browser                    http://som-pp.worten.net                        ff
+Levantamento Omnicanal - Motivos de Rutura - Danificado - Sintra
+    Open Browser                    http://som-pp.worten.net                        chrome
+    Set Window Size	                1920	 1080
     Sleep                           1
     Input Text                      id:username                                     TST_SOM_04      
     Input Text                      id:password                                     Pass.123
@@ -93,11 +104,15 @@ Levantamento Omnicanal - Motivos de Rutura - Danificado - Matosinhos
     
 
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
@@ -105,8 +120,9 @@ Levantamento Omnicanal - Motivos de Rutura - Danificado - Matosinhos
 
 
 
-Levantamento Omnicanal - Motivos de Rutura - Incompleto - Matosinhos
-    Open Browser                    http://som-pp.worten.net                        ff
+Levantamento Omnicanal - Motivos de Rutura - Incompleto - Sintra
+    Open Browser                    http://som-pp.worten.net                        chrome
+    Set Window Size	                1920	 1080
     Sleep                           1
     Input Text                      id:username                                     TST_SOM_04      
     Input Text                      id:password                                     Pass.123
@@ -126,19 +142,24 @@ Levantamento Omnicanal - Motivos de Rutura - Incompleto - Matosinhos
     
 
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
     Close Browser
 
 
-Expedição Omnicanal - Motivos de Rutura - Stock 0 - Matosinhos
-    Open Browser                    http://som-pp.worten.net                        ff
+Expedição Omnicanal - Motivos de Rutura - Stock 0 - Sintra
+    Open Browser                    http://som-pp.worten.net                        chrome
+    Set Window Size	                1920	 1080
     Sleep                           1
     Input Text                      id:username                                     TST_SOM_04      
     Input Text                      id:password                                     Pass.123
@@ -158,11 +179,15 @@ Expedição Omnicanal - Motivos de Rutura - Stock 0 - Matosinhos
     
 
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
@@ -171,8 +196,9 @@ Expedição Omnicanal - Motivos de Rutura - Stock 0 - Matosinhos
 
 
 
-Expedição Omnicanal - Erro de Stock - Matosinhos
-    Open Browser                    http://som-pp.worten.net                        ff
+Expedição Omnicanal - Erro de Stock - Sintra
+    Open Browser                    http://som-pp.worten.net                        chrome
+    Set Window Size	                1920	 1080
     Sleep                           1
     Input Text                      id:username                                     TST_SOM_04      
     Input Text                      id:password                                     Pass.123
@@ -192,11 +218,15 @@ Expedição Omnicanal - Erro de Stock - Matosinhos
     
 
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
@@ -204,8 +234,9 @@ Expedição Omnicanal - Erro de Stock - Matosinhos
 
 
 
-Expedição Omnicanal - Motivos de Rutura - Danificado - Matosinhos
-    Open Browser                    http://som-pp.worten.net                        ff
+Expedição Omnicanal - Motivos de Rutura - Danificado - Sintra
+    Open Browser                    http://som-pp.worten.net                        chrome
+    Set Window Size	                1920	 1080
     Sleep                           1
     Input Text                      id:username                                     TST_SOM_04      
     Input Text                      id:password                                     Pass.123
@@ -225,11 +256,15 @@ Expedição Omnicanal - Motivos de Rutura - Danificado - Matosinhos
     
 
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
@@ -237,8 +272,9 @@ Expedição Omnicanal - Motivos de Rutura - Danificado - Matosinhos
 
 
 
-Expedição Omnicanal - Motivos de Rutura - Incompleto - Matosinhos
-    Open Browser                    http://som-pp.worten.net                        ff
+Expedição Omnicanal - Motivos de Rutura - Incompleto - Sintra
+    Open Browser                    http://som-pp.worten.net                        chrome
+    Set Window Size	                1920	 1080
     Sleep                           1
     Input Text                      id:username                                     TST_SOM_04      
     Input Text                      id:password                                     Pass.123
@@ -258,11 +294,15 @@ Expedição Omnicanal - Motivos de Rutura - Incompleto - Matosinhos
     
 
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]

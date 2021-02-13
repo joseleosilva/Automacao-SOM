@@ -24,11 +24,15 @@ Exibição de Timing em Prazo - Fórum Sintra
     Capture Page Screenshot
 
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
@@ -53,11 +57,15 @@ Exibição de Timing - Fora de Pazo - Fórum Sintra
     Capture Page Screenshot
 
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
@@ -82,11 +90,15 @@ Exibição de Timing em Prazo - Matosinhos
     Capture Page Screenshot
 
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
@@ -111,11 +123,15 @@ Exibição de Timing - Fora de Prazo - Matosinhos
     Capture Page Screenshot
 
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]

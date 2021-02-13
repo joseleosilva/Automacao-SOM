@@ -6,24 +6,24 @@ Library         SeleniumLibrary
 **Test Case** 
 
 Criação de Pedido PPC
-    [Tags]                          PISAB
+    [Tags]                          PISAA
     Open Browser                    https://salestool-pp.worten.net/     ff
-    Set Selenium Implicit Wait      60
+    Sleep                           1
     Input Text                      id:username                          STW_TESTE01      
     Input Text                      id:password                          Pass.123
     Click Button                    xpath://*[@class="formButton"]
+    #Sleep                           2
     Set Selenium Implicit Wait      60
-    #Click Button                    class:w-button-primary
-    Sleep                           5
-    #Click Element                   xpath://*[@href="#cookiePolicy-close"]
+    Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
+    Sleep                           3
     Input Text                      id:search-input                      6109587
     Set Selenium Implicit Wait      60
     Click Element                   xpath://*[@class="w-product__title__wrapper"]
     Sleep                           10
     Click Element                   xpath://*[@class="w-button-primary w-checkout-button salestool-add"]
-    Sleep                           10
+    Sleep                           20
     Click Element                   xpath://*[@href="/carrinho"]
-    Sleep                           10
+    Sleep                           3
     Click Button                    xpath://*[@class="st-proceed-checkout w-button-primary"]
     Input Text                      id:st-invoice_clientName             José
     Input Text                      id:st-invoice_lastName               Silva
@@ -31,31 +31,26 @@ Criação de Pedido PPC
     Input Text                      id:st-invoice_email                  leoscs86@gmail.com
     Input Text                      id:st-invoice_nif                    297199153
     Capture Page Screenshot
-    Sleep                           15
-    Click Button                    xpath://*[@class="client-checkout-btn btn-checkout-clientDefined pull-right w-button-primary"]
-    Sleep                           15
-    Click Element                   xpath://*[@class="btn-addDelivery salestool-btnAddDelivery"]
-    Click Element                   xpath://*[@class="col-5 btn-OpenSearchStoreModal-header btn-OpenSearchStoreModal"]
-    Input Text                      xpath://*[@class="invoice_delivery_modal_input deliveryInput input-search-store"]             Vila do
-    Click Element                   xpath://*[@data-store-name="WRT V. CONDE"]
-    Sleep                           2
-    Click Button                    xpath://*[@class="float-right w-button-primary searchConfirmBtn"]
-    Click Button                    id:add_store
+    Set Selenium Implicit Wait      90
+    Click Element                   xpath://*[@class="client-checkout-btn btn-checkout-clientDefined pull-right w-button-primary"]
+    Set Selenium Implicit Wait      90
     Click Button                    xpath://*[@class="client-checkout-btn btn-checkout-address pull-right w-button-primary showOnBillingAddressEmpty"]
     Click Element                   xpath://*[@class="delivery_selector"]
-    Set Selenium Implicit Wait      60
-    Click Element                   xpath://*[@data-address="518"]
+    Set Selenium Implicit Wait      90
+    Click Element                   xpath://*[@data-address="515"]
     Capture Page Screenshot
-    Sleep                           15
+    Sleep                           10
     Click Button                    id:finalize_buy
     Capture Page Screenshot
-    Sleep                           2
-    Click Element                   xpath://*[@class="w-button-secondary checkoutBtn"]
-    Click Element                   xpath://*[@class="arrow down"]            
+    Set Selenium Implicit Wait      90
+    Click Element                   xpath://*[@class="w-button-secondary checkoutBtn"] 
+    Click Element                   xpath://*[@class="arrow down"]     
+    #Click Element                   id:st-login-info
     Click Element                   xpath://*[@id="st-logout"]
-    Set Selenium Implicit Wait      60
+    Set Selenium Implicit Wait      90
     Capture Page Screenshot                   
     Close Browser
+    
 
 
 Pagamento PPC
@@ -65,11 +60,9 @@ Pagamento PPC
     Input Text                      id:username                          STW_TESTE01      
     Input Text                      id:password                          Pass.123
     Click Button                    //*[@class="formButton"]
-    Sleep                           3
-    #Click Element                   xpath://*[@href="#cookiePolicy-close"]
-    #Sleep                           2
-    #Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
     Sleep                           5
+    Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
+    Sleep                           3
     Click Element                   xpath://*[@id="st-login-info"]
     Sleep                           5
     Click Element                   xpath://*[@id="go_to_carts_management"]
@@ -109,11 +102,15 @@ Exibição de Levantamento - Fórum Sintra
     Page Should Not Contain Textfield  6109587                                        
     Capture Page Screenshot
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
@@ -133,11 +130,15 @@ Exibição de Expedições - Fórum Sintra
     Page Should Not Contain Textfield  6109587                                    
     Capture Page Screenshot
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
@@ -157,11 +158,15 @@ Exibição de Levantamento - Matosinhos
     Page Should Not Contain Textfield  6109587                                     
     Capture Page Screenshot
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
@@ -179,12 +184,17 @@ Exibição de Expedições - Matosinhos
     Sleep                           5
     Page Should Contain             Expedições  
     Page Should Not Contain Textfield  6109587                                           
+    Capture Page Screenshot
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
