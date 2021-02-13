@@ -27,11 +27,15 @@ Validação de Filtros superior a 48 horas - Levantamento Omnicanal - Matosinhos
     Sleep                           2    
 
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
@@ -61,11 +65,15 @@ Validação de Filtros superior a 48 horas - Expedição Omnicanal - Matosinhos
     Sleep                           2    
 
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
@@ -95,11 +103,15 @@ Validação de Filtros superior a 48 horas - Levantamento Omnicanal - Forum Sint
     Sleep                           2    
 
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]
@@ -128,11 +140,15 @@ Validação de Filtros superior a 48 horas - Expedição Omnicanal - Forum Sintr
     Sleep                           2    
 
     Sleep                           2
-    Click Element                   id:person_btn
-    Sleep                           90
-    Page Should Contain Element     xpath://*[@class="v-btn v-btn--flat v-btn--text theme--light v-size--default"]
-    Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="v-btn__content"]
+    Click Element                   xpath://*[@class="notification-icon svg-icon svg-fill"]
+    Page Should Contain             Notificações    
+    Capture Page Screenshot 
+    Sleep                           3
+    Capture Page Screenshot      
+    Click Element                   xpath://*[@class=" mouse-hover close-icon svg-icon svg-fill"]
+    Click Element                   id:person_btn            
+    Capture Page Screenshot         
+    Click Element                   xpath://*[@class="svg-icon svg-fill"]
     #Sleep                           2 -Mexida em 25-01-2021 - Apareceu um novo modal, perguntando se o utilizador tem certeza que quer fazer logout --
     #Capture Page Screenshot
     #Click Element                   xpath://*[@class="button"]

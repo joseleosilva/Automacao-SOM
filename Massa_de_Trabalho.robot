@@ -12,10 +12,12 @@ PIS AA
     Input Text                      id:username                          STW_TESTE01      
     Input Text                      id:password                          Pass.123
     Click Button                    xpath://*[@class="formButton"]
-    Sleep                           2
+    #Sleep                           2
     #Click Element                   xpath://*[@class="cookiePolicy-close"]
-    Sleep                           3
-    #Click Button                    class:w-button-primary
+    Sleep                           5
+    Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
+    #Click Element                   xpath://*[@class="w-cookies-popup__wrapper "]
+    #Click Element                   xpath://*[@class="w-button-primary"]
     Input Text                      id:search-input                      6507260
     Set Selenium Implicit Wait      60
     Click Element                   xpath://*[@class="w-product__title__wrapper"]
@@ -23,7 +25,7 @@ PIS AA
     Click Element                   xpath://*[@class="w-button-primary w-checkout-button salestool-add"]
     Sleep                           20
     Click Element                   xpath://*[@href="/carrinho"]
-    Set Selenium Implicit Wait      60
+    Sleep                           3
     Click Button                    xpath://*[@class="st-proceed-checkout w-button-primary"]
     Input Text                      id:st-invoice_clientName             José
     Input Text                      id:st-invoice_lastName               Silva
@@ -53,14 +55,15 @@ PIS AA
 Pagamento PIS AA
     [Tags]                          PISAA
     Open Browser                    https://salestool-pp.worten.net/     ff
-    #Sleep                           180
+    Sleep                           180
     Input Text                      id:username                          STW_TESTE01      
     Input Text                      id:password                          Pass.123
     Click Button                    xpath://*[@class="formButton"]
-    # Sleep                           3
-    # Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
-    Sleep                           2
+    Sleep                           5
+    Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
+    #Sleep                           2
     #Click Element                   xpath://*[@class="cookiePolicy-close"]
+    #Click Element                   xpath://*[@class="w-cookies-popup__wrapper "]
     Sleep                           3
     Click Element                   xpath://*[@id="st-login-info"]
     Sleep                           5
@@ -93,10 +96,10 @@ PIS AB 1
     Input Text                      id:username                          STW_TESTE01      
     Input Text                      id:password                          Pass.123
     Click Button                    xpath://*[@class="formButton"]
-    Sleep                           2
-    #Click Element                   xpath://*[@class="cookiePolicy-close"]
+    #Sleep                           2
+    Sleep                           5
+    Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
     Sleep                           3
-    #Click Button                    class:w-button-primary
     Input Text                      id:search-input                      5807112
     Set Selenium Implicit Wait      60
     Click Element                   xpath://*[@class="w-product__title__wrapper"]
@@ -104,7 +107,7 @@ PIS AB 1
     Click Element                   xpath://*[@class="w-button-primary w-checkout-button salestool-add"]
     Sleep                           20
     Click Element                   xpath://*[@href="/carrinho"]
-    Set Selenium Implicit Wait      60
+    Sleep                           3
     Click Button                    xpath://*[@class="st-proceed-checkout w-button-primary"]
     Input Text                      id:st-invoice_clientName             José
     Input Text                      id:st-invoice_lastName               Silva
@@ -138,10 +141,8 @@ Pagamento PIS AB 1
     Input Text                      id:username                          STW_TESTE01      
     Input Text                      id:password                          Pass.123
     Click Button                    xpath://*[@class="formButton"]
-    # Sleep                           3
-    # Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
-    Sleep                           2
-    #Click Element                   xpath://*[@class="cookiePolicy-close"]
+    Sleep                           5
+    Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
     Sleep                           3
     Click Element                   xpath://*[@id="st-login-info"]
     Sleep                           5
@@ -175,11 +176,9 @@ PIS AB 2
     Input Text                      id:username                          STW_TESTE01      
     Input Text                      id:password                          Pass.123
     Click Button                    xpath://*[@class="formButton"]
-    Set Selenium Implicit Wait      60
-    # Click Button                    class:w-button-primary
-    Sleep                           2
-    #Click Element                   xpath://*[@class="cookiePolicy-close"]
-    Sleep                           3
+    Sleep                           5
+    Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
+    #Sleep                           3
     Input Text                      id:search-input                      5807112
     Set Selenium Implicit Wait      60
     Click Element                   xpath://*[@class="w-product__title__wrapper"]
@@ -229,10 +228,8 @@ Pagamento PIS AB 2
     Input Text                      id:username                          STW_TESTE01      
     Input Text                      id:password                          Pass.123
     Click Button                    xpath://*[@class="formButton"]
-    # Sleep                           3
-    # Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
-    Sleep                           2
-    #Click Element                   xpath://*[@class="cookiePolicy-close"]
+    Sleep                           5
+    Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
     Sleep                           3
     Click Element                   xpath://*[@id="st-login-info"]
     Sleep                           5
@@ -265,10 +262,9 @@ SCED - PISGAE
     Input Text                      id:username                          STW_TESTE01      
     Input Text                      id:password                          Pass.123
     Click Button                    xpath://*[@class="formButton"]
-    Sleep                           2
-    #Click Element                   xpath://*[@class="cookiePolicy-close"]
+    Sleep                           5
+    Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
     Sleep                           3
-    #Click Button                    class:w-button-primary
     Input Text                      id:search-input                      6383397
     Set Selenium Implicit Wait      60
     Click Element                   xpath://*[@class="w-product__title__wrapper"]
@@ -311,10 +307,8 @@ Pagamento SCED-PISGAE
     Input Text                      id:username                          STW_TESTE01      
     Input Text                      id:password                          Pass.123
     Click Button                    xpath://*[@class="formButton"]
-    # Sleep                           3
-    # Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
-    Sleep                           2
-    #Click Element                   xpath://*[@class="cookiePolicy-close"]
+    Sleep                           5
+    Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
     Sleep                           3
     Click Element                   xpath://*[@id="st-login-info"]
     Sleep                           5
@@ -349,10 +343,9 @@ SCED
     Input Text                      id:username                          STW_TESTE01      
     Input Text                      id:password                          Pass.123
     Click Button                    xpath://*[@class="formButton"]
-    Sleep                           2
-    #Click Element                   xpath://*[@class="cookiePolicy-close"]
+    Sleep                           5
+    Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
     Sleep                           3
-    #Click Button                    class:w-button-primary
     Input Text                      id:search-input                      6383397
     Set Selenium Implicit Wait      60
     Click Element                   xpath://*[@class="w-product__title__wrapper"]
@@ -420,10 +413,8 @@ Pagamento SCED
     Input Text                      id:username                          STW_TESTE01      
     Input Text                      id:password                          Pass.123
     Click Button                    xpath://*[@class="formButton"]
-    # Sleep                           3
-    # Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
-    Sleep                           2
-    #Click Element                   xpath://*[@class="cookiePolicy-close"]
+    Sleep                           5
+    Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
     Sleep                           3
     Click Element                   xpath://*[@id="st-login-info"]
     Sleep                           5
@@ -442,11 +433,11 @@ Pagamento SCED
     Sleep                           20
     Capture Page Screenshot         
     Sleep                           10
-    Click Element                   xpath://*[@id="confirm_presale"]
-    Set Selenium Implicit Wait      60         
+    Click Element                   xpath://*[@class="arrow down"]            
+    Click Element                   xpath://*[@id="st-logout"]
+    Set Selenium Implicit Wait      60
     Capture Page Screenshot                   
     Close Browser
-   
    
 
 SR
@@ -456,10 +447,9 @@ SR
     Input Text                      id:username                          STW_TESTE01      
     Input Text                      id:password                          Pass.123
     Click Button                    xpath://*[@class="formButton"]
-    Sleep                           2
-    #Click Element                   xpath://*[@class="cookiePolicy-close"]
+    Sleep                           5
+    Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
     Sleep                           3
-    #Click Button                    class:w-button-primary
     Input Text                      id:search-input                      6507260
     Set Selenium Implicit Wait      60
     Click Element                   xpath://*[@class="w-product__title__wrapper"]
@@ -501,10 +491,8 @@ Pagamento SR
     Input Text                      id:username                          STW_TESTE01      
     Input Text                      id:password                          Pass.123
     Click Button                    xpath://*[@class="formButton"]
-    # Sleep                           3
-    # Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
-    Sleep                           2
-    #Click Element                   xpath://*[@class="cookiePolicy-close"]
+    Sleep                           5
+    Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
     Sleep                           3
     Click Element                   xpath://*[@id="st-login-info"]
     Sleep                           5
@@ -526,10 +514,9 @@ Pagamento SR
     Click Element                   xpath://*[@id="confirm_presale"]
     Set Selenium Implicit Wait      60         
     Capture Page Screenshot                   
-    Click Element                   xpath://*[@class="w-button-secondary checkoutBtn"]
     Click Element                   xpath://*[@class="arrow down"]            
     Click Element                   xpath://*[@id="st-logout"]
-    Set Selenium Implicit Wait      60              
+    Set Selenium Implicit Wait      60
     Capture Page Screenshot                   
     Close Browser
    
@@ -544,10 +531,9 @@ HD - Sales Tool
     Input Text                      id:username                          STW_TESTE01      
     Input Text                      id:password                          Pass.123
     Click Button                    xpath://*[@class="formButton"]
-    Sleep                           2
-    #Click Element                   xpath://*[@class="cookiePolicy-close"]
+    Sleep                           5
+    Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
     Sleep                           3
-    #Click Button                    class:w-button-primary
     Input Text                      id:search-input                      5807112
     Set Selenium Implicit Wait      60
     Click Element                   xpath://*[@class="w-product__title__wrapper"]
@@ -600,10 +586,8 @@ Pagamento HD Sales Tool
     Input Text                      id:username                          STW_TESTE01      
     Input Text                      id:password                          Pass.123
     Click Button                    xpath://*[@class="formButton"]
-    # Sleep                           3
-    # Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
-    Sleep                           2
-    #Click Element                   xpath://*[@class="cookiePolicy-close"]
+    Sleep                           5
+    Click Element                   xpath://*[@class="w-cookies-popup__footer__primary-button"]
     Sleep                           3
     Click Element                   xpath://*[@id="st-login-info"]
     Sleep                           5
@@ -634,10 +618,10 @@ HD - Site DEV
     [Tags]                          HDEV
     Open Browser                    https://wpt-dev.worten.net/          ff
     Sleep                           3
-    #Click Button                    class:w-button-primary
-    #Sleep                           3
-    #Click Element                   xpath://*[@class="cookiePolicy-close"]
+    Click Button                    class:w-button-primary
     Sleep                           3
+    #Click Element                   xpath://*[@class="cookiePolicy-close"]
+    #Sleep                           3
     Click Element                   xpath://*[@href="/cliente/conta#/myLogin"] 
     Input Text                      id:email                             leoscs86@gmail.com
     Input Text                      id:pass                              scsleo86
